@@ -1,4 +1,5 @@
 import { VNode, VNodeChild, isVNode } from './vnode'
+import { LifecycleHook, LifecycleHooks } from './lifecyclehooks'
 import {
   pauseTracking,
   resetTracking,
@@ -160,24 +161,24 @@ export type Component<
 
 export { ComponentOptions }
 
-type LifecycleHook<TFn = Function> = TFn[] | null
+// type LifecycleHook<TFn = Function> = TFn[] | null
 
-export const enum LifecycleHooks {
-  BEFORE_CREATE = 'bc',
-  CREATED = 'c',
-  BEFORE_MOUNT = 'bm',
-  MOUNTED = 'm',
-  BEFORE_UPDATE = 'bu',
-  UPDATED = 'u',
-  BEFORE_UNMOUNT = 'bum',
-  UNMOUNTED = 'um',
-  DEACTIVATED = 'da',
-  ACTIVATED = 'a',
-  RENDER_TRIGGERED = 'rtg',
-  RENDER_TRACKED = 'rtc',
-  ERROR_CAPTURED = 'ec',
-  SERVER_PREFETCH = 'sp'
-}
+// export const enum LifecycleHooks {
+//   BEFORE_CREATE = 'bc',
+//   CREATED = 'c',
+//   BEFORE_MOUNT = 'bm',
+//   MOUNTED = 'm',
+//   BEFORE_UPDATE = 'bu',
+//   UPDATED = 'u',
+//   BEFORE_UNMOUNT = 'bum',
+//   UNMOUNTED = 'um',
+//   DEACTIVATED = 'da',
+//   ACTIVATED = 'a',
+//   RENDER_TRIGGERED = 'rtg',
+//   RENDER_TRACKED = 'rtc',
+//   ERROR_CAPTURED = 'ec',
+//   SERVER_PREFETCH = 'sp'
+// }
 
 export interface SetupContext<E = EmitsOptions> {
   attrs: Data

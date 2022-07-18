@@ -3,11 +3,11 @@ import {
   getCurrentInstance,
   SetupContext,
   ComponentInternalInstance,
-  LifecycleHooks,
   currentInstance,
   getComponentName,
   ComponentOptions
 } from '../component'
+import { LifecycleHooks } from '../lifecyclehooks'
 import {
   VNode,
   cloneVNode,
