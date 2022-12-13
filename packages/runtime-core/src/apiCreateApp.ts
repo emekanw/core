@@ -12,7 +12,7 @@ import {
   RuntimeCompilerOptions
 } from './componentOptions'
 import {
-  ComponentCustomProperties,
+  // ComponentCustomProperties,
   ComponentPublicInstance
 } from './componentPublicInstance'
 import { Directive, validateDirectiveName } from './directives'
@@ -73,7 +73,8 @@ export interface AppConfig {
 
   performance: boolean
   optionMergeStrategies: Record<string, OptionMergeFunction>
-  globalProperties: ComponentCustomProperties & Record<string, any>
+  // globalProperties: ComponentCustomProperties & Record<string, any>
+  globalProperties: Record<string, any>
   errorHandler?: (
     err: unknown,
     instance: ComponentPublicInstance | null,

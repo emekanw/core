@@ -5,9 +5,9 @@ import {
   ComponentInternalOptions,
   Component,
   ConcreteComponent,
-  InternalRenderFunction,
-  LifecycleHooks
+  InternalRenderFunction
 } from './component'
+import { LifecycleHooks } from './lifecyclehooks'
 import {
   isFunction,
   extend,

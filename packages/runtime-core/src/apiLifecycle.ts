@@ -2,10 +2,10 @@ import {
   ComponentInternalInstance,
   currentInstance,
   isInSSRComponentSetup,
-  LifecycleHooks,
   setCurrentInstance,
   unsetCurrentInstance
 } from './component'
+import { LifecycleHooks } from './lifecyclehooks'
 import { ComponentPublicInstance } from './componentPublicInstance'
 import { callWithAsyncErrorHandling, ErrorTypeStrings } from './errorHandling'
 import { warn } from './warning'
