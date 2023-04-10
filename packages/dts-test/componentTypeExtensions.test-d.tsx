@@ -40,7 +40,7 @@ export const Custom = defineComponent({
       this.notExisting
       // @ts-expect-error
       this.state = 'not valid'
-      // @ts-expect-error
+
       this.$.appContext.config.globalProperties.state = 'not valid'
     }
   }
