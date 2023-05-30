@@ -17,7 +17,10 @@ declare module 'vue' {
 
 export const Custom = defineComponent({
   props: {
-    bar: String,
+    bar: {
+      type: String,
+      default: ''
+    },
     baz: {
       type: Number,
       required: true
@@ -40,7 +43,7 @@ export const Custom = defineComponent({
       this.notExisting
       // @ts-expect-error
       this.state = 'not valid'
-      // @ts-expect-error
+
       this.$.appContext.config.globalProperties.state = 'not valid'
     }
   }
